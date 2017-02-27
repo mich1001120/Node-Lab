@@ -14,3 +14,4 @@ This repository is used to practice the struction of Node.
 
 5.別把`接收需求的處理程序`的工作放在`router`裡，盡可能地做到分工，避免日後更複雜時無法很好地擴充。
 
+6.`blocking`與`non-blocking`如果不了解的話，請看這邊的連接有簡易的說明 http://ithelp.ithome.com.tw/articles/10161404。
