@@ -15,8 +15,3 @@ This repository is used to practice the struction of Node.
 5.別把`接收需求的處理程序`的工作放在`router`裡，盡可能地做到分工，避免日後更複雜時無法很好地擴充。
 
 6.`blocking`與`non-blocking`如果不了解的話，請看這邊的連接有簡易的說明 http://ithelp.ithome.com.tw/articles/10161404。
-
-##Node.js 30days
-1.`forever`可以保持運行的狀態，管理node.js程式的服務，最棒的是他會在你更新node.js時，自動幫你重啟服務!(測試失敗)
-
-2.啟動指令```forever start app.js```，查看現有執行中的服務```forever list```。
