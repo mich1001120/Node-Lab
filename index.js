@@ -1,11 +1,11 @@
-var server = require("./server");
-var router = require("./router");
-var requestHandlers = require("./requestHandlers");
+var http = require("http");
 
-var handle = {}; //建立一個handle陣列來彙整所有的handler
-handle["/"] = requestHandlers.start;
-handle["/start"] = requestHandlers.start;
-handle["/upload"] = requestHandlers.upload;
-handle["/show"] = requestHandlers.show;
+function onRequest(req, res){
+    console.log("Request received.");
+    res.writeHead(200, {"Content-Type": "text/plain"});
+    res.write("Hello World");
+    res.end();
+}
 
-server.start(router.route, handle);
+http.createServer(onRequest).listen(3000);
+console.log("Server has started to listen at port: 3000.");
